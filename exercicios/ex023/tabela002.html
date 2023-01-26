@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../ex004/Fav-HTML5.ico" type="image/x-icon">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+   
+        thead, tfoot {
+            background-color: #383838;
+            color: white;
+        }
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: #383838;
+        }
+        tbody > tr:nth-child(odd){
+            background-color: white;
+        }
+        tbody > tr:nth-child(even){
+             /*2n-1 odd impar | 2n even par*/
+            background-color: lightgray;
+        }
+
+        td.num {
+            text-align: right;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        HIERARQUIA DE TABELAS (grandes)
+        TABLE 
+            CAPTION
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    -->
+    <table>
+        <caption>População das Unidades Federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td class="num"><strong>554464646</strong></td>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">49954531</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">49954531</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">49954531</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">49954531</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">49954531</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">49954531</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">49954531</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">49954531</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">49954531</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">49954531</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">49954531</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">49954531</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">49954531</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">49954531</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">49954531</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">49954531</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">49954531</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">49954531</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">49954531</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">49954531</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">49954531</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">49954531</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">49954531</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">49954531</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">49954531</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">49954531</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">49954531</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">49954531</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">49954531</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">49954531</td>
+            </tr>
+        </tbody>
+    </table>    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione natus libero similique ex culpa adipisci cupiditate sunt reiciendis at velit. Ad eum dicta cumque ipsum commodi nostrum alias eaque quas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium pariatur, ab, laborum veritatis illo placeat vero dicta porro alias provident nihil eaque in? Accusantium aliquid dolores aut nesciunt, veniam provident. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid eum voluptatibus aspernatur quibusdam debitis unde minima quos culpa vel molestiae suscipit, doloremque distinctio corporis nesciunt eligendi, a natus tempora corrupti.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione natus libero similique ex culpa adipisci cupiditate sunt reiciendis at velit. Ad eum dicta cumque ipsum commodi nostrum alias eaque quas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium pariatur, ab, laborum veritatis illo placeat vero dicta porro alias provident nihil eaque in? Accusantium aliquid dolores aut nesciunt, veniam provident. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid eum voluptatibus aspernatur quibusdam debitis unde minima quos culpa vel molestiae suscipit, doloremque distinctio corporis nesciunt eligendi, a natus tempora corrupti.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione natus libero similique ex culpa adipisci cupiditate sunt reiciendis at velit. Ad eum dicta cumque ipsum commodi nostrum alias eaque quas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium pariatur, ab, laborum veritatis illo placeat vero dicta porro alias provident nihil eaque in? Accusantium aliquid dolores aut nesciunt, veniam provident. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid eum voluptatibus aspernatur quibusdam debitis unde minima quos culpa vel molestiae suscipit, doloremque distinctio corporis nesciunt eligendi, a natus tempora corrupti.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione natus libero similique ex culpa adipisci cupiditate sunt reiciendis at velit. Ad eum dicta cumque ipsum commodi nostrum alias eaque quas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium pariatur, ab, laborum veritatis illo placeat vero dicta porro alias provident nihil eaque in? Accusantium aliquid dolores aut nesciunt, veniam provident. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid eum voluptatibus aspernatur quibusdam debitis unde minima quos culpa vel molestiae suscipit, doloremque distinctio corporis nesciunt eligendi, a natus tempora corrupti.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione natus libero similique ex culpa adipisci cupiditate sunt reiciendis at velit. Ad eum dicta cumque ipsum commodi nostrum alias eaque quas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium pariatur, ab, laborum veritatis illo placeat vero dicta porro alias provident nihil eaque in? Accusantium aliquid dolores aut nesciunt, veniam provident. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid eum voluptatibus aspernatur quibusdam debitis unde minima quos culpa vel molestiae suscipit, doloremque distinctio corporis nesciunt eligendi, a natus tempora corrupti.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione natus libero similique ex culpa adipisci cupiditate sunt reiciendis at velit. Ad eum dicta cumque ipsum commodi nostrum alias eaque quas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium pariatur, ab, laborum veritatis illo placeat vero dicta porro alias provident nihil eaque in? Accusantium aliquid dolores aut nesciunt, veniam provident. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid eum voluptatibus aspernatur quibusdam debitis unde minima quos culpa vel molestiae suscipit, doloremque distinctio corporis nesciunt eligendi, a natus tempora corrupti.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione natus libero similique ex culpa adipisci cupiditate sunt reiciendis at velit. Ad eum dicta cumque ipsum commodi nostrum alias eaque quas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium pariatur, ab, laborum veritatis illo placeat vero dicta porro alias provident nihil eaque in? Accusantium aliquid dolores aut nesciunt, veniam provident. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid eum voluptatibus aspernatur quibusdam debitis unde minima quos culpa vel molestiae suscipit, doloremque distinctio corporis nesciunt eligendi, a natus tempora corrupti.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione natus libero similique ex culpa adipisci cupiditate sunt reiciendis at velit. Ad eum dicta cumque ipsum commodi nostrum alias eaque quas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium pariatur, ab, laborum veritatis illo placeat vero dicta porro alias provident nihil eaque in? Accusantium aliquid dolores aut nesciunt, veniam provident. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid eum voluptatibus aspernatur quibusdam debitis unde minima quos culpa vel molestiae suscipit, doloremque distinctio corporis nesciunt eligendi, a natus tempora corrupti.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione natus libero similique ex culpa adipisci cupiditate sunt reiciendis at velit. Ad eum dicta cumque ipsum commodi nostrum alias eaque quas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium pariatur, ab, laborum veritatis illo placeat vero dicta porro alias provident nihil eaque in? Accusantium aliquid dolores aut nesciunt, veniam provident. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid eum voluptatibus aspernatur quibusdam debitis unde minima quos culpa vel molestiae suscipit, doloremque distinctio corporis nesciunt eligendi, a natus tempora corrupti.</p>
+                                    
+</body>
+</html>
